@@ -26,14 +26,16 @@ export default function HomeScreen() {
             flex:1,
             flexDirection: "row", //horizontal
             justifyContent: "center", //main axis
-            alignItems:"stretch" //secondary
+            alignItems:"stretch", //secondary
+            alignContent: "center",
+            flexWrap: "wrap"
             
           }
         }>
         <View style={{
-            width: 100,
             height: 300,
-            backgroundColor:"dodgerblue"
+            backgroundColor:"dodgerblue",
+            flexBasis: 100 //width
           }}/>
 
         <View style={{
@@ -44,6 +46,18 @@ export default function HomeScreen() {
         }}/>
         <View style={{
               backgroundColor:"tomato",
+              flex: 1,
+              width: 100,
+              height: 100,
+            }}/>
+          <View style={{
+              backgroundColor:"grey",
+              flex: 1,
+              width: 100,
+              height: 100,
+            }}/>
+          <View style={{
+              backgroundColor:"greenyellow",
               flex: 1,
               width: 100,
               height: 100,
